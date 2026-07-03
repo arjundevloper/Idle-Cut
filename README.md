@@ -75,7 +75,7 @@ On boot, the ESP32 starts a WiFi access point:
 - Connect from your phone or laptop, then open **`http://project.local`** (or the IP address printed to Serial at 115200 baud if mDNS isn't available on your network)
 
 ## Using the dashboard
-
+![Dashboard](path/assets/dashboard.png)
 | Control | What it does |
 |---|---|
 | **Manual override** | Force the relay on or off; automatic control resumes on the next motion detection or after the auto-off timer |
