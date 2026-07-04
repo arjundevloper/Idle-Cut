@@ -2,6 +2,8 @@
 
 Motion-activated power saver for the ESP32. IdleCut watches a room with a radar motion sensor and automatically cuts power to an AC appliance (fan, lamp, heater, etc.) via a relay once no motion has been seen for a configurable period — no cloud, no app, just a local web dashboard served straight from the board.
 
+![booting](assets/booting animation.jpg)
+
 ## Features
 
 - **Automatic power control** — relay switches on when motion is detected and switches off after a configurable idle timeout
@@ -26,7 +28,7 @@ Motion-activated power saver for the ESP32. IdleCut watches a room with a radar 
 | 1x LED | Motion status indicator |
 
 ### Wiring
-
+![Wiring](assets/wiring.png)
 | ESP32 pin | Connects to |
 |---|---|
 | D4 | DHT11 data |
@@ -75,7 +77,7 @@ On boot, the ESP32 starts a WiFi access point:
 - Connect from your phone or laptop, then open **`http://project.local`** (or the IP address printed to Serial at 115200 baud if mDNS isn't available on your network)
 
 ## Using the dashboard
-![Dashboard](path/assets/dashboard.png)
+![Dashboard](assets/dashboard.png)
 | Control | What it does |
 |---|---|
 | **Manual override** | Force the relay on or off; automatic control resumes on the next motion detection or after the auto-off timer |
@@ -85,7 +87,7 @@ On boot, the ESP32 starts a WiFi access point:
 | **Resync time** | Syncs the board's clock to your device's local time (no internet/NTP required) |
 
 ## Physical controls
-
+![prototype](assets/prototype.jpg)
 - **Button 1 (D16):** enable or disable the radar sensor. Disabling it leaves the relay in whatever state it was last in.
 - **Button 2 (D18):** manually toggle the relay — only active while the radar is disabled.
 
