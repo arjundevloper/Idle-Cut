@@ -1,8 +1,7 @@
 # IdleCut
-
+![booting](assets/booting%20animation.jpg)
 Motion-activated power saver for the ESP32. IdleCut watches a room with a radar motion sensor and automatically cuts power to an AC appliance (fan, lamp, heater, etc.) via a relay once no motion has been seen for a configurable period — no cloud, no app, just a local web dashboard served straight from the board.
 
-![booting](assets/booting animation.jpg)
 
 ## Features
 
